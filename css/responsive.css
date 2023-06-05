@@ -1,0 +1,141 @@
+@media (min-width: 320px) and (max-width: 575px){
+    header #baner .slider a{
+        display: inline-block;
+        margin-left: 130px;
+    }
+    #baner  .aboutimg img{
+        display: inline-block;
+        width: 100% !important;
+    }
+    #about .aboutone img{
+        display: inline-block;
+        width: 100%;
+    } 
+    #about .abouttwo .aboutus {
+        display: inline-block;
+       width: 100%;
+       margin: auto !important;
+       margin-left: 150px !important;
+   
+    }
+    #about .abouttwo a{
+        display: inline-block;
+        margin-left: 140px !important;
+        margin-bottom: 50px !important;
+    }
+    #about .aboutthree img{
+        display: inline-block;
+        width: 100%; 
+    }
+    #djsx .djsus img{
+        display: inline-block;
+        margin-left: 160px; 
+    }
+    #djs .djsslider .djsimg img{
+        display: inline-block;
+        width: 100%;
+    }
+    #baner .slick-dots{
+        text-align: center;
+    
+    }
+    #djs .slick-dots li{
+       display: inline-block;
+      margin: 0px 10px;
+      
+      
+    }
+    #djs .slick-dots li button{
+        color: transparent;
+        width: 15px;
+        height: 15px;
+        display: block;
+        border-radius: 50%;
+        border: none;
+        border: 1px solid var(--primarycolor);
+    
+    }
+    #djs .slick-dots li.slick-active button{
+    background-color: var(--secondarycouler);
+    }
+    #events .eventus img{
+        display: inline-block;
+        margin-left: 160px; 
+    }
+    #blogs .blogus img{
+        display: inline-block;
+        margin-left: 160px;
+    }
+    #footer .footerus img{
+        display: inline-block;
+        margin: auto; 
+        margin-left: 120px; 
+    }
+    #footer{
+ 
+        background-image: url(../img/footar-bg-img.jpg);
+        height: 700px;
+        background-position: center;
+        background-size: cover;
+         background-repeat: no-repeat;
+         color: rgb(247, 238, 238);
+        margin-top: 80px;
+        text-align: center;
+        }
+        #footer .footerfour{
+          
+        background-image: url(../img/footar-bg-img.jpg);
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+         background-repeat: no-repeat;
+         color: rgb(247, 238, 238);
+        margin-top: 20px;  
+        text-align: center;
+        padding: 0px 40px;
+        text-align: center;
+        }
+        #footer .footertwo{
+            background-image: url(../img/footar-bg-img.jpg);
+            height: 400px;
+            background-position: center;
+            background-size: cover;
+             background-repeat: no-repeat;
+             color: rgb(247, 238, 238);
+            margin-top: 80px; 
+            position: 0px 40px;
+            text-align: center;
+         
+        }
+        #footer .footerone ul li p .footeronex{
+            text-align: center;
+            margin-left: 200px;
+
+        }
+        #footer .footerone ul li p .footeronexx{
+            text-align: center;
+            margin-left: 200px;
+           
+        }
+        #footer .footerone h5{
+            text-align: center;
+        }
+        #blog .blogcard{
+            width: 500px;
+            display: inline-block;
+            height:500px;
+        }
+        #test .testcard{
+            width: 300px;
+            display: inline-block;
+            height:500px;
+        }
+        #plans .planus img{
+            display: inline-block;
+            margin: auto; 
+            margin-left: 120px;     
+        }
+        nav.myNav {
+            height: 120px;
+          } 
+}

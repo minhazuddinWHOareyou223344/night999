@@ -1,0 +1,828 @@
+
+/* -----------------------------------------------------------
+Them name : HUNT | Html teamplate 
+Autor : Minhaz uddin 
+Author Ulr : -------------
+Version:1.0
+
+-----------------------------------------------------------------------------
+
+
+*/
+/* --------------------------------------------------------------------------
+
+
+1  header
+2  about
+3  fortfolio
+4  services
+5  
+6  
+7
+8
+9
+10
+11
+12
+13
+
+
+---------------------------------------------------------------------------------
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+ list-style: none;
+}
+:root{
+    --primarycolor:#ffffff;
+    --secondarycouler:#ff5f83;
+     --threecouler:#111111;
+     
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-size: 14px;
+    font-weight:200;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primarycolor);
+    background-color: var(--threecouler);
+   
+
+}
+/* header section start hear */
+nav.menuFixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+   z-index: 8;
+   transform: translateY(-100%);
+   animation-name: menuFixed;
+   animation-duration: 0.47s;
+   animation-timing-function: ease-in;
+   animation-fill-mode: forwards;
+  }
+  
+  @keyframes menuFixed {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .navbar{
+    width: 100%;
+    height: 100px;
+  }
+header  .banerslider {
+    height: 740px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ #navber .nav-item a{
+     font-size: 14px ;
+     font-weight: 200;
+     color: white;
+ 
+  
+  }
+ 
+
+ #navber .nav-item:hover{
+   
+   color: var(--secondarycouler);
+ }
+ #navber .nav-item a:hover{
+ 
+    color: var(--secondarycouler);
+ }
+ #navber .nav-item a::before{
+     content: "";
+     width: 100%;
+     height: 1px;
+     background-color:var(--secondarycouler);
+     position: absolute;
+    bottom: 0;
+     left: 0;
+     transform: scale(0);
+     transition: 0.3s;
+ }
+ #navber {
+     position: relative;
+ }
+ #navber .nav-item:hover  ::before{
+     transform: scale(1.2);
+     width: 50px;
+ }
+ 
+ header .slider a:hover{
+     background-color: var(--secondarycouler);
+     border: none !important;
+ }
+ header .sliderbox .row{
+     height: 740px;
+ }
+ #baner .banerslider .row{
+     height: 600px;
+     justify-content: center;
+ 
+ 
+ }
+ #baner .banerslider .aboutimg img{
+    display: inline-block;
+    width: 100%;
+    margin-top: 55px;
+ }
+ #baner .banerslider .slider{
+     margin: auto;
+     width: 500px;
+     margin-bottom: 130px;
+   
+ 
+ }
+ 
+ header #baner .slider h3{
+     font-size: 22px;
+     font-weight: 400;
+     color: var(--primarycolor);
+     text-align: center;
+     text-align: center;
+ }
+ header #baner .slider h1{
+     font-size: 60px;
+     font-weight: 400;
+     color: var(--secondarycouler);
+     letter-spacing: 10px;
+     text-align: center;
+ }
+ header #baner .slider h1 .sliderhh{
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--primarycolor);
+    letter-spacing: 10px;
+    text-align: center;
+}
+#baner .banerslider .bottomimg img{
+display: inline-block;
+margin-left: 530px;
+
+}
+ header #baner .slider p{
+     font-size: 14px;
+     font-weight: 400;
+     color: var(--primarycolor);
+     text-align: center;
+     
+  
+ }
+ header #baner .slider a{
+     width: 100px;
+     height: 30px;
+background-color: var(--secondarycouler);
+    display: inline-block;
+    color: var(--primarycolor);
+    line-height: 30px;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 16px;
+   text-align: center;
+   margin-left: 200px;
+  
+ }
+ header #baner .slider a:hover{
+
+background: none;
+border: 1px solid white;
+ }
+ #navber  .smallmanu{
+    
+     text-align: center;
+ 
+ }
+ #baner .slick-dots{
+     text-align: center;
+ 
+ }
+ #baner .slick-dots li{
+    display: inline-block;
+   margin: 0px 10px;
+   
+   
+ }
+ #baner .slick-dots li button{
+     color: transparent;
+     width: 15px;
+     height: 15px;
+     display: block;
+     border-radius: 50%;
+     border: none;
+     border: 1px solid var(--primarycolor);
+ 
+ }
+ #baner .slick-dots li.slick-active button{
+ background-color: var(--secondarycouler);
+ }
+ /* header section end hear */
+ /* about section start hear */
+ #about{
+    padding: 80px 0px;
+ }
+ #about .abouttwo h3{
+    font-size: 24px;
+    text-align: center;
+
+ }
+ #about .abouttwo .aboutus{
+    display: inline-block;
+    margin-left: 250px;
+    margin-bottom: 30px;
+ }
+ #about .abouttwo p{
+    font-size: 14px;
+    text-align: center;
+ }
+ #about .abouttwo a {
+    width: 100px;
+    height: 30px;
+background-color: var(--secondarycouler);
+   display: inline-block;
+   color: var(--primarycolor);
+   line-height: 30px;
+   text-align: center;
+   margin-left: 20px;
+   font-size: 16px;
+  text-align: center;
+  margin-left: 240px;
+ margin-top: 50px;
+ }
+ #about .abouttwo a:hover{
+
+    background: none;
+    border: 1px solid white;
+ }
+ about section end hear
+ /* gallery section stat hear */
+ #gallery .galleryslider{
+   
+    height: 500px;
+    padding: 50px 0px;
+    background-position: center;
+    background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+ }
+ #gallery .galleryslider .overlay a{
+    display: inline-block;
+    font-size: 14px;
+    color: var(--primarycolor);
+}
+#gallery .galleryslider h3{
+    text-align: center;
+    font-size: 22px;
+}
+#gallery .galleryslider .galleryus img{
+    display: inline-block;
+    margin-left: 540px;
+    margin-bottom: 30px;
+    
+}
+ /* gallery section end hear */
+ /* djs section start hear  */
+ #djsx{
+    margin-top: 70px;
+    margin-bottom:30px ;
+   
+ }
+ #djsx h3{
+    font-size: 22px;
+    text-align: center;
+ }
+ #djsx .djsus img{
+    text-align: center;
+    margin-left: 600px;
+ }
+ #djs .djsslider .djsimg img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+ }
+ #djs .djsslider .djsimg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+ }
+ #djdj {
+    position: relative;
+ }
+ 
+
+.slick-slide{
+ 
+transition: all  0.4s ease-in-out;
+padding: 40px 0px;
+}
+.slick-slide img{
+    max-width: 100%;
+    transition: all  0.4s ease-in-out;
+    margin-left: 10px;
+    transform: scale(0.9);
+}
+.slick-center{
+    transform: scale(1.3);
+   
+
+}
+
+
+ /* djs section end hear  */
+ /* events section start hear */
+ #event{
+    background-image: url(../img/enent-bg-img.jpg);
+    height: 400px;
+    padding: 50px 0px;
+    background-position: center;
+    background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+     margin-bottom: 80px;
+     
+ }
+ #event .eventslider{
+    position: relative;
+ }
+ #event .arrows  span.laftarrows{
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+cursor: pointer;
+}
+#event .arrows  span.rightarrows{
+    font-size: 25px;
+    position: absolute;
+   top: 50%;
+  right: 20px;
+  
+  cursor: pointer;
+}
+#event .arrows  span.laftarrows:hover{
+    color: var(--secondarycouler);
+    transition: 500ms;
+}
+#event .arrows  span.rightarrows:hover{
+    color: var(--secondarycouler);
+    transition: 500ms;
+}
+#event .eventslider .eventtext h5{
+    font-size: 22px;
+    
+}
+#event .eventslider .eventtext h6{
+    font-size: 16px;
+}
+#event .eventslider .eventtext p{
+    font-size: 14px;
+    text-align: justify;
+}
+#event .eventslider .eventtext ul li{
+    display: inline-block;
+    
+}
+#event .eventslider .eventtext ul li span{
+    width: 50px;
+    height: 50px;
+   text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    background-color: var(--primarycolor);
+    color: var(--secondarycouler);
+    border-radius: 50%;
+    margin-left: 20px;
+}
+#events h3{
+    font-size: 22px;
+    text-align: center;
+}
+#events .eventus img{
+    display: inline-block;
+    margin-left: 590px;
+    margin-bottom: 30px;
+}
+#event .eventslider .eventtext ul li span:hover{
+    color: var(--primarycolor);
+    background-color: var(--secondarycouler);
+}
+ /* event section end hear */
+ /* blog section start hear */
+ #blog .blogcard{
+    width: 320px;
+    height: 500px;
+    position: relative;
+ }
+ #blogs h3{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 170px;
+ }
+ #blogs .blogus img{
+    display: inline-block;
+    margin-left: 585px;
+    margin-bottom: 30px;
+ }
+ #blog .blogimg img{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid white;
+    position: relative;
+ }
+ #blog .blogtext {
+    border: 1px solid white;
+    border-top: none;
+    text-align:center ;
+    margin-left: 20px;
+    margin-top: 20px;
+
+ }
+ #blog .blogtext h5{
+    font-size: 16px;
+ }
+ #blog .blogtext h6{
+    font-size: 13px;
+ }
+ #blog .blogtext p{
+    font-size: 12px;
+    padding: 0px 10px;
+ }
+ .blogimg .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    left: 25px;
+    width:290px;
+    height: 50%;
+    transform: scale(-100%);
+    background-color: rgba(246, 8, 246, 0.68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 500ms;
+  
+  }
+  .blogimg .overlay a{
+    color:white ;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color:var(--primaryColor);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .slick-center .overlay{
+    opacity: 1;
+    visibility: visible;
+    transition: 500ms;
+  }
+  #blog .blogtext a{
+    width: 100px;
+    height: 30px;
+background-color: var(--secondarycouler);
+   display: inline-block;
+   color: var(--primaryColor);
+   line-height: 30px;
+   text-align: center;
+  
+   font-size: 16px;
+  text-align: center;
+ margin-bottom: 30px;
+  }
+  #blogs .arrows  span.laftarrows{
+    font-size: 25px;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+cursor: pointer;
+}
+#blogs .arrows  span.rightarrows{
+    font-size: 25px;
+    position: absolute;
+   top: 400px;
+  right: 50px;
+  
+  cursor: pointer;
+}
+#blogs .arrows  span.laftarrows:hover{
+    color: var(--secondarycouler);
+    transition: 500ms;
+}
+#blogs .arrows  span.rightarrows:hover{
+    color: var(--secondarycouler);
+    transition: 500ms;
+}
+#blogs{
+    position: relative;
+}
+ /* blog section end hear */
+ /* test section start hear */
+ #tests .arrows  span.laftarrows{
+    font-size: 25px;
+    position: absolute;
+    top:290px;
+    z-index: 999;
+    left:50px;
+ 
+cursor: pointer;
+}
+#tests .arrows  span.rightarrows{
+    font-size: 25px;
+    position: absolute;
+   top:290px;
+   z-index: 999;
+   right: 80px;
+  
+  
+  cursor: pointer;
+}
+#tests .arrows  span.laftarrows:hover{
+    color: var(--secondarycouler);
+    transition: 500ms;
+}
+#tests .arrows  span.rightarrows:hover{
+    color: var(--secondarycouler);
+    transition: 500ms;
+}
+#tests{
+    position: relative;
+}
+ #tests{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 80px;
+ }
+ #tests .testus img{
+    display: inline-block;
+ 
+
+ }
+ #test{
+    background-image: url(../img/test-bg-img.jpg);
+    height: 400px;
+    padding: 50px 0px;
+    background-position: center;
+    background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+     margin-bottom: 80px;
+ }
+ #test .testtext{
+    width: 450px;
+    height: 200px;
+    background-color: #353535;
+ }
+ #test .testcard{
+    margin-top: 30px;
+    width: 580px;
+    margin-left: 80px;
+ }
+ /* test section end hear */
+ /* plan section start hear */
+ #plans h3{
+    text-align: center;
+    font-size: 22px;
+ }
+ #plans .planus img{
+    display: inline-block;
+    margin-left: 585px;
+ }
+ #plan .plancard{
+    width: 350px ;
+    height: 530px;
+    background-color: #353535;
+    position: relative;
+   
+ }
+ #plan{
+    margin-bottom: 70px;
+    margin-left: 20px;
+ }
+ #plan .plancard h3{
+    font-size: 22px;
+    text-align: center;
+    height: 100px;
+    width: 350px;
+    border-bottom: 1px solid var(--primarycolor);
+    line-height: 100px;
+    display: inline-block;
+    margin-left: -10px;
+ }
+ #plan .plancard h5{
+    position: absolute;
+    top: 70px;
+    color: var(--secondarycouler);
+    font-size: 22px;
+    text-align: center;
+   line-height: 100px;
+ left: 150px;
+ background-color: var(--primarycolor);
+ border-radius: 30px;
+ width: 100px;
+ height: 100px;
+ background-color: var(--secondarycouler);
+ color: var(--primarycolor);
+ }
+ #plan .plancard ul{
+    margin-top: 70px;
+ }
+ #plan .plancard ul li{
+  
+  padding: 12px 0px;
+  text-align: center;
+  font-size: 14px;
+
+ }
+ #plan .plancard p{
+    width: 350px;
+    height: 30px;
+   text-align: center;
+   background-color: var(--secondarycouler);
+   margin-left: -10px;
+
+ }
+ #plans .arrows  span.laftarrows{
+    font-size: 25px;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+cursor: pointer;
+}
+#plans .arrows  span.rightarrows{
+    font-size: 25px;
+    position: absolute;
+   top: 400px;
+  right: 50px;
+  
+  cursor: pointer;
+}
+#plans .arrows  span.laftarrows:hover{
+    color: var(--secondarycouler);
+    transition: 500ms;
+}
+#plans .arrows  span.rightarrows:hover{
+    color: var(--secondarycouler);
+    transition: 500ms;
+}
+#plans{
+    position: relative;
+}
+
+ /* plan section end hear */
+ 
+/* footer section start hear */
+#footer{
+ 
+    background-image: url(../img/footar-bg-img.jpg);
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+     background-repeat: no-repeat;
+     color: rgb(247, 238, 238);
+    margin-top: 80px;
+    }
+    #footer .footerus img{
+    display: inline-block;
+   
+    padding: 30px 0px;
+    }
+    #footer .footerone h5{
+        font-size: 16px;
+        padding: 30px 0px;
+        
+    }
+    #footer .footerone ul li p{
+     font-size: 14px;
+     text-align: center;
+     text-align: justify;
+    padding: 0px !important;
+    margin: 0px !important;
+    }
+    #footer .footerone ul li p .footeronex{
+        margin-left: 50px;
+       
+    
+    }
+    #footer .footerone ul li p .footeronexx{
+        margin-left: 150px;
+        text-align: justify;
+    
+    }
+    #footer .footerx{
+     
+       border-bottom: 1px solid white;
+    }
+    #footer .footertwo h5{
+        font-size: 16px;
+        padding: 50px 0px;
+    }
+    #footer .footertwo .footertwox img {
+        display: inline-block;
+        left: 30px;
+        width: 40px;
+       
+    
+    }
+    #footer .footertwo .footertwoxr p{
+        font-size: 14px;
+        margin-left: -20px;
+        text-align: justify;
+        text-align: left;
+    }
+    #footer .footerthree h5{
+        font-size: 16px;
+        padding: 30px 0px;
+    }
+    #footer .footerthree .footerthreex img{
+        display: inline-block;
+        margin: 10px 0px;
+        width: 100%;
+    }
+    #footer .footerfour h5{
+        font-size: 16px;
+        padding: 30px 0px;
+    }
+    #footer .footerone .footertext{
+        font-size: 14px;
+        padding: 20px 0px ;
+    }
+    #footer .footerone .footerfourimg{
+        font-size: 14px;
+        padding: 20px 0px ;
+        cursor: pointer;
+        color: #e23e38;
+    }
+    #footer .footerfour .footerfourimg:hover{
+      color: var(--threecouler);
+      
+    }
+    #footer .footerfour ul{
+        display: inline-block;
+        margin-left: -50px;
+        margin-bottom: -100px;
+    }
+    #footer .footerfour ul li{
+        display: inline-block;
+     margin-right: 10px;
+        margin-top: 50px;
+    }
+    #footer .footerfour ul li span{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+     border: 1px solid var(--primarycolor);
+     cursor: pointer;
+     border-radius: 50%;
+    }
+    #footer .footerfour ul li span:hover{
+        background-color: var(--secondarycouler);
+        border: none;
+      color: var(--threecouler);
+    }
+    #footer .footerfour  input{
+        width: 100%;
+        background-color: #111111;
+        color: var(--primarycolor);
+        margin-bottom: 10px;
+        border: 1px solid var(--primarycolor);
+    }
+    #footer .footerfour a{
+        display: inline-block;
+        width: 100%;
+        background-color: var(--secondarycouler);
+
+   color: var(--primaryColor);
+   line-height: 30px;
+   text-align: center;
+  
+   font-size: 16px;
+  text-align: center;
+ margin-bottom: 30px;
+    }
+    /* footer section end hear */
+    
